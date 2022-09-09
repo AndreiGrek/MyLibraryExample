@@ -4,7 +4,7 @@ import android.util.Log
 
 class MyLibraryClass {
 
-    companion object {
+    companion object  {
         fun log(text: String) {
             Log.d("LOGQ", text)
 
