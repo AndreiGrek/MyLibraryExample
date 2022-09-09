@@ -34,3 +34,17 @@ dependencies {
 
 }
 
+afterEvaluate {
+    publishing{
+        publications{
+            release(MavenPublication){
+                from components.release
+
+                groupId = 'com.github.andrei'
+                artifactId = 'mytestlibrary'
+                version = '1.0'
+            }
+        }
+    }
+}
+
